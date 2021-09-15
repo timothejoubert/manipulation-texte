@@ -18,8 +18,8 @@
     --width-default: 3px;
     --border-: solid var(--dark-color) var(--width-default);
 
-    --Anim-start: scale(0) rotate(45deg);
-    --Anim-end: scale(1);
+    --Anim-start: scale(0.8) rotate(25deg) translate(45px, -15px);
+    --Anim-end: scale(1) rotate(0deg) translate(0px, 0px);
 }
 
 /***********/
