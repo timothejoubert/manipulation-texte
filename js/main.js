@@ -17,6 +17,10 @@ const bodyDOM = document.querySelector("body");
 /////////////////////////
 //variable font parametre
 /////////////////////////
+function mapRange (value, a, b, c, d) {
+    value = (value - a) / (b - a);
+    return c + value * (d - c);
+}
 
 const containerTxt = document.createElement("p");
 const contentTxtInput = document.querySelector("#txt-content");
@@ -25,7 +29,7 @@ const contentTxtInput = document.querySelector("#txt-content");
 var txt = contentTxtInput.value;
 const article = document.querySelector(".variable-font");
 contentTxtInput.addEventListener('input', e =>{
-	txt = e.target.value;
+	txt = mapRange(e.target.value, 0, 10, 10, 0);
 	loadTxtInput(fontFamilly,variableFontSize, marginLetter, interlignage, delayAnim);
 });
 
