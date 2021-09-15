@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template</title>
+    <!-- fonts -->
+    <link src="css/font.css"></link>
+    <!-- recursive variable font -->
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:slnt,wght,CASL,CRSV,MONO@-15..0,300..1000,0..1,0..1,0..1&display=swap" rel="stylesheet">
+    <!-- style -->
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body id="accueil">
+    <!-- HEADER -->
+    <!-- <header>
+        <nav>
+            <div><h1>Font expérience</h1></div>
+            <ul>
+                <a class="active-page" href="index.html">
+                    <li>Accueil</li>
+                </a>
+                <a href="">
+                    <li>Page 1</li>
+                </a>
+                <a href="">
+                    <li>Page 2</li>
+                </a>
+            </ul>
+        </nav>
+    </header> -->
+
+
+    <!-- MAIN -->
+    <main>
+
+        <section class="gui">
+            <!-- <div class="titre-gui">Interface utilisateur</div> -->
+
+            <!-- <div class="container-param">
+                <div class="titre-param">Global</div>
+
+                <div class="content-param">
+                    <label>font-size</label>
+                    <input type="range" id="slider-font-size-global" min="55" value="100" max="200">    
+                </div>
+
+            </div> -->
+
+            <div class="container-param">
+                <div class="titre-param">Font variable</div>
+
+                <div class="content-param">
+                    <label>Anim chaque lettre :</label>
+                    <button id="button-letter"></button>
+                </div>
+
+                <div class="content-param">
+                    <label>Delay d'animation</label>
+                    <input type="range" id="slider-delay-animation" min="0" value="2" max="10">
+                </div>
+
+                <div class="content-param">
+                    <label>Vitesse d'animation</label>
+                    <input type="range" id="slider-vitesse-animation" min="0" value="3" max="10" step="0.1">
+                </div>
+
+                <div class="content-param choose-font">
+                    <label>Choisir font</label>
+                    <p id="fraunces">Fraunces</p> 
+                    <p id="anchos">Anchos</p> 
+                    <p id="grenze">Grenze</p> 
+                    <p id="kyiv">Kyiv</p> 
+                    <p id="kyiv-serif">Kyiv-serif</p> 
+                    <p id="kyiv-titling">Kyiv-titling</p> 
+                </div>
+
+                <div class="content-param">
+                    <label>Font-size</label>
+                    <input type="range" id="slider-font-size-variable" min="0.1" value="3" max="15" step="0.1">
+                </div>
+
+                <div class="content-param">
+                    <label>Approche</label>
+                    <input type="range" id="slider-font-margin-variable" min="-50" value="0" max="50" step="1">
+                </div>
+
+                <div class="content-param">
+                    <label>Interlignage</label>
+                    <input type="range" id="slider-font-interlignage-variable" min="0" value="0" max="100">
+                </div>
+
+                <div class="content-param">
+                    <label>Contenu texte</label>
+                    <textarea id="txt-content" name="txt" rows="1">Un peu de live coding ?</textarea>
+                </div>
+
+                <div class="content-param">
+                    <label> Alignement</label>
+                    <select id="align-select">
+                        <option value="">--Please choose an option--</option>
+                        <option value="left">Gauche</option>
+                        <option value="center">centrer</option>
+                        <option value="right">Droite</option>
+                        <option value="space-between">Justifier</option>
+                        <option value="space-evenly">Espace entre</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- <div class="container-param">
+                <div class="titre-param">Paragraphe</div>
+
+                <div class="content-param">
+                    <label>Font-size</label>
+                    <input type="range" id="slider-font-size-content" min="55" value="100" max="200">
+                </div>
+
+                <div class="content-param">
+                    <label>Line-height</label>
+                    <input type="range" id="slider-line-height-content" min="0" value="1.2" max="4" step="0.1">
+                </div>
+
+            </div>
+
+            <div class="container-param">
+
+                <div class="titre-param">Enregistrement</div>
+
+                <div class="content-param">
+                </div>
+
+            </div> -->
+
+            <div class="container-param">
+
+                <div class="titre-param">Code</div>
+
+                <div class="content-param">
+                    <label>Anim start</label>
+                    <input type="text" id="anim-start">
+                </div>
+                <div class="content-param">
+                    <label>Anim end</label>
+                    <input type="text" id="anim-end">
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section class="content-page" id="element-to-record">
+            <article class="variable-font"></article>
+            <article>
+                <p id="para-content">
+                    <!-- Le temps de l’invention est celui d’une ouverture à ce qui est difficilement pensable, au sens où Jacques Derrida peut dire qu’« une invention suppose toujours quelque illégalité, la rupture d’un contrat implicite, elle introduit un désordre dans la paisible ordonnance des choses, elle perturbe les bienséances1 ». Alors que le numérique suscite craintes et croyances, n’y a-t-il pas urgence à interroger le présupposé selon lequel l’invention puisse se répandre parmi nous sans « désordre » ? Il en est pourtant ainsi dans la plupart des « guides » à destination des concepteurs de programmes numériques, qui visent à établir des listes de normes ou de conseils. En abordant le numérique du point de vue de « l’expérience utilisateur », de tels ouvrages prennent d’emblée le parti des usages. Il s’agit de lister les « bonnes pratiques » afin de ne pas déranger la « paisible ordonnance » (Derrida) des habitudes et des logiques économiques. Ces approches nous paraissent insuffisantes, car elles évacuent d’emblée des considérations philosophiques, morales et, au fond, techniques. Ce qui s’y joue ne permet pas de dépasser ce qu’il y a déjà en jeu. La supposée « révolution » du numérique a-t-elle été avérée, ou ses ruptures sont-elles restées recouvertes ? Alors que notre rapport au numérique se fait essentiellement via des programmes, comment penser la pertinence de ces interfaces ? -->
+                </p>
+            </article>
+        </section>
+        
+    </main>
+    <!-- <div id="debug"></div>
+ -->
+
+
+    <!-- JS -->
+
+    <script src="js/main.js"></script>
+
+
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.8.0-alpha/matter.min.js"></script> -->
+    <!-- <script src="http://brm.io/js/libs/matter-js/matter-0.7.0.min.js"></script> -->
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.9.2/matter.min.js" integrity="sha512-YpdsRheM7yfiMPxsIiXNfSFGgLZly3BC0M5lIIrwtqY/fH8RPm1sRYeRgZR9PzdKznrhmvDtgJMr9TrR+MBepg==" crossorigin="anonymous"></script>
+    <script src="js/sketch-matter.js"></script> -->
+    
+</body>
+
+</html>
